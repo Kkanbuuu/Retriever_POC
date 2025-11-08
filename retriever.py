@@ -10,6 +10,7 @@ class SimpleRetriever:
         self.documents = []
         self.embeddings = None
         self._load_data()
+        self._embed_documents()
 
     def _load_data(self):
         for filename in os.listdir(self.data_dir):
